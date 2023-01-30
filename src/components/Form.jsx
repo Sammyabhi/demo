@@ -25,7 +25,7 @@ class Form extends React.Component {
     const { name } = target
     const value = target.type === 'checkbox' ? target.checked : target.value
     this.setState({ [name]: value }, () => {
-      console.log(name)
+    //  console.log(name)
     })
   }
 
@@ -42,7 +42,7 @@ class Form extends React.Component {
       subscribed,
     } = this.state
     const subscribedText = subscribed ? 'Yes' : 'No'
-    alert(`Firstname: ${firstname}, Lastname: ${lastname}, Email: ${email}, Language: ${languages}, Subscribed: ${subscribedText}`)
+    (`Firstname: ${firstname}, Lastname: ${lastname}, Email: ${email}, Language: ${languages}, Subscribed: ${subscribedText}`)
   }
 
   render() {
